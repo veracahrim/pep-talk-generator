@@ -1,0 +1,30 @@
+<head>
+  <title>Pep Talk Generator!</title>
+</head>
+<body>
+<div id="text"></div>
+<button onClick="generate()">generate</button>
+<script>
+const one = [
+  'Hello There, ',
+]
+const two = [
+  'You are among the greatest, ',
+]
+const three = [
+  'Dont let anyone tell you otherwise, ',
+]
+const four = [
+  'did you understand?',
+]
+function generate() {
+  const text = randomize()
+  document.querySelector("#text").innerHtml = text
+}
+
+function randomize() {
+  const random = Math.floor(Math.random() * one.length - 1)
+  return one[random] + two[random] + three[random] + four[random]
+}
+</script>
+</body>
