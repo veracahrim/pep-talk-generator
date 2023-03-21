@@ -112,7 +112,10 @@ function generate() {
 
 function randomize() {
   const random = Math.floor(Math.random() * one.length - 1)
-  return one[random] +''+ two[random] +''+ three[random] +''+ four[random]
+  const random2 = Math.floor(Math.random() * two.length - 1)
+  const random3 = Math.floor(Math.random() * three.length - 1)
+  const random4 = Math.floor(Math.random() * four.length - 1)
+  return one[random] +''+ two[random2] +''+ three[random3] +''+ four[random4]
 }
 </script>
 </body>
