@@ -1,5 +1,22 @@
 <head>
   <title>Pep Talk Generator!</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+      place-items: center;
+    }
+    #text {
+      font-family: Calibri, sans-serif;
+      font-size: 3rem;
+      color: #98231f;
+    }
+    button {
+      font-size: 2rem;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
 <div id="text"></div>
@@ -87,7 +104,6 @@ const four = [
 ]
 function generate() {
   const text = randomize()
-  alert("debug")
   document.getElementById("text").innerHTML = text
 }
 
